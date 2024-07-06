@@ -2,9 +2,14 @@
     box-sizing: border-box;
 }
 
+h1, h2 {
+    font-family: 'Permanent Marker';
+}
+
 body {
     font-size: 16px;
     margin: auto;
+    background-image: url(../steve-sharp-VvjpvlSMS5g-unsplash.jpg);
 }
 
 header, footer, .contentnav, .logo, ul, nav ul {
@@ -27,16 +32,28 @@ header {
 
 .contentnav {
     background-color: #f1efe3;
+    color: #94938f;
+    font-family: 'Permanent Marker';
 }
 
 a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    color: #94938f;
 }
+
+a:hover {
+    color: #94938f;
+}
+@media (hover: hover) {
+    a:hover {
+        color: black;
+    }
+}
+
 
 .logo {
     font-size: 2rem;
-    font-weight: 500;
 }
 
 
@@ -45,16 +62,55 @@ main {
     padding-top: 4rem;
 }
 
-
-
-
-img {
-    width: 25%;
-    height: auto;
+.mission {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    text-align: center;
+    justify-content: center;   
+    color: #f1efe3;
 }
 
+.mission h1 {
+    font-size: 3rem;
+}
 
+.mission h2 {
+    padding-top: 1rem;
+    font-size: 1.7rem;
+}
 
+.portfolio {
+    display: flex;
+    padding-top: 10rem;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio p {
+    font-size: 1.7rem;
+    font-family: 'Rock Salt';
+    color: #fdfaf0;
+    backdrop-filter: blur(15px);
+}
+
+.portfimage img {
+    display: inline;
+    justify-content: space-between;
+    margin: 0 30px;
+    width: 25%;
+    padding-top: 40px;
+    transition: transform .2s ease-in-out;
+}
+
+.portfimage img:hover {
+    transform: scale(1.5);
+}
+
+.teammate img {
+    width: 15%;
+}
 
 .mobile {
     display: none;
