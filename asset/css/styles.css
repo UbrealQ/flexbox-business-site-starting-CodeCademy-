@@ -2,6 +2,60 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+    margin: auto;
+}
+
+header, footer, .contentnav, .logo, ul, nav ul {
+    display: flex;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    height: 4rem;
+    z-index: 2;
+}
+
+.contentnav, nav, ul li, .logo {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.contentnav {
+    background-color: #f1efe3;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+
+main {
+    padding-top: 4rem;
+}
+
+
+
+
+img {
+    width: 25%;
+    height: auto;
+}
+
+
+
+
 .mobile {
     display: none;
 }
