@@ -6,6 +6,10 @@ h1, h2 {
     font-family: 'Permanent Marker';
 }
 
+h3, p {
+    font-family: Rock Salt;
+}
+
 body {
     font-size: 16px;
     margin: auto;
@@ -102,16 +106,60 @@ main {
     width: 25%;
     padding-top: 40px;
     transition: transform .2s ease-in-out;
+    cursor: zoom-in;
 }
 
 .portfimage img:hover {
     transform: scale(1.5);
 }
 
-.teammate img {
-    width: 15%;
+#team h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    font-size: 1.7rem;
+    color: #f1efe3;
 }
 
-.mobile {
-    display: none;
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.teammate {
+    padding: 10px;
+    flex-basis: 400px;
+}
+
+.teammate h3 {
+    font-size: 1.5rem;
+    color: #f1efe3;
+    padding-top: 5px;
+}
+
+.teammate p {
+    font-size: 1.2rem;
+    color: #f1efe3;
+    padding-top: 10px;
+}
+
+.teammate img {
+    width: 70%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+}
+
+.copyright {
+    color: #f1efe3;
+}
+
+.contact {
+    color: #f1efe3;
 }
